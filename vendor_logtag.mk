@@ -263,3 +263,8 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.C2Store=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.MDP=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.powerhal-libperfmgr=$(VENDOR_LOG_LEVEL)
+
+ifneq (eng,$(TARGET_BUILD_VARIANT))
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.log.tag=I
+endif
