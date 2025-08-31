@@ -132,6 +132,10 @@ PRODUCT_PACKAGES += \
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,//$(LOCAL_PATH):init_xiaomi_gale)
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+
 # Light
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
