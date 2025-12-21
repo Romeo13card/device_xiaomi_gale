@@ -113,14 +113,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "DoubleTapToWake",
-      "Path": "/sys/touchpanel/double_tap",
-      "Values": [
-        "1",
-        "0"
-      ],
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -146,6 +138,16 @@
         ""
       ],
       "Type": "Property"
+    },
+    {
+      "Name": "DoubleTapToWake",
+      "Path": "/dev/input/event2",
+      "Values": [
+        "0",
+        "1"
+      ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     }
   ],
   "Actions": [
