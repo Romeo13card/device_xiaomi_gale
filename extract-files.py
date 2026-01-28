@@ -91,7 +91,13 @@ blob_fixups: blob_fixups_user_type = {
     ) : blob_fixup()
         .add_needed('libbase_shim.so'),
     'vendor/lib64/hw/hwcomposer.mt6768.so' : blob_fixup()
-        .add_needed('libprocessgroup_shim.so')
+        .add_needed('libprocessgroup_shim.so'),
+    (
+        'vendor/lib/hw/audio.primary.mt6768.so',
+        'vendor/lib/librt_extamp_intf.so',
+        'vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so',
+    ): blob_fixup()
+        .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
