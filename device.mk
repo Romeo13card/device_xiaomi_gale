@@ -73,7 +73,7 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl:32 \
-    android.hardware.bluetooth@1.1.vendor:32 \
+    android.hardware.bluetooth-service.mediatek \
     libbluetooth_audio_session:32
 
 # Cgroup
