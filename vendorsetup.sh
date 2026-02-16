@@ -3,8 +3,8 @@
 echo "Cloning Stuffs Needed For Gayleer"
 
 # Stuffs Gayleer
-git clone https://github.com/Mayuri-Chan/proprietary_vendor_xiaomi_gale -b sixteen vendor/xiaomi/gale
-git clone https://github.com/Mayuri-Chan/android_kernel_xiaomi_gale -b staging kernel/xiaomi/gale
+git clone https://github.com/xaveroprjkt/vendor_xiaomi_gale -b lineage-23.2 vendor/xiaomi/gale
+git clone https://github.com/xaveroprjkt/kernel_xiaomi_gale -b lineage-23.2 kernel/xiaomi/gale
 
 # Another yet stuffs
 git clone https://github.com/xaveroprjkt/device_mediatek_sepolicy_vndr.git -b lineage-23.0 device/mediatek/sepolicy_vndr
