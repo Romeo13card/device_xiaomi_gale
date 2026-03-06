@@ -11,11 +11,4 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git
 git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-23.2 hardware/xiaomi
 git clone https://github.com/LineageOS/android_hardware_mediatek.git -b lineage-23.2 hardware/mediatek
 git clone https://github.com/techyminati/android_vendor_mediatek_ims vendor/mediatek/ims/
-
-read -rp "Do you want to clone the signing keys? (y/N): " a
-
-if [[ $a =~ ^[yY]$ ]]; then
-    git clone https://github.com/VannTakashi/vann_keys vendor/lineage-priv/keys
-else
-    echo "Skipping signing keys."
-fi
+git clone https://github.com/VannTakashi/vann_keys -b afl vendor/afterlife-priv/keys

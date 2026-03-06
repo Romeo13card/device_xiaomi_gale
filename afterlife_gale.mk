@@ -12,9 +12,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/gale/device.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_gale
+# Afterify
+AFTERLIFE_MAINTAINER := itsmeexaveroo.
+TARGET_ENABLE_BLUR := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_SUPPORTS_QUICK_TAP := true
+
+PRODUCT_NAME := afterlife_gale
 PRODUCT_DEVICE := gale
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
