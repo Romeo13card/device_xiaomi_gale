@@ -251,7 +251,8 @@ PRODUCT_PACKAGES += \
     WifiResOverlayGale
 
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-miku
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
