@@ -4,6 +4,7 @@ echo "Cloning Stuffs Needed For Gayleer"
 
 # Stuffs Gayleer
 git clone https://github.com/exrcz1337/kurumi_gale_kernel -b kurumi-testing kernel/xiaomi/gale
+git clone https://github.com/exrcz1337/proprietary_vendor_xiaomi_gale -b lineage-23.2 vendor/xiaomi/gale
 
 # Another yet stuffs
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr.git -b lineage-23.2 device/mediatek/sepolicy_vndr
